@@ -36,7 +36,7 @@ PlacesSearchResult _$PlacesSearchResultFromJson(Map<String, dynamic> json) {
   return PlacesSearchResult(
     id: json['id'] as String?,
     reference: json['reference'] as String,
-    name: json['name'] as String,
+    name: json['name'] as String?,
     placeId: json['place_id'] as String,
     formattedAddress: json['formatted_address'] as String?,
     photos: (json['photos'] as List<dynamic>?)
@@ -134,7 +134,7 @@ const _$PriceLevelEnumMap = {
 PlaceDetails _$PlaceDetailsFromJson(Map<String, dynamic> json) {
   return PlaceDetails(
     adrAddress: json['adr_address'] as String?,
-    name: json['name'] as String,
+    name: json['name'] as String?,
     placeId: json['place_id'] as String?,
     utcOffset: json['utc_offset'] as num?,
     id: json['id'] as String?,
