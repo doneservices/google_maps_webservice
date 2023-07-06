@@ -126,7 +126,7 @@ class GoogleMapsPlaces extends GoogleWebService {
     return _decodeDetailsResponse(await doGet(url, headers: apiHeaders));
   }
 
-  @deprecated
+  @Deprecated("This is deprecated in favor of `getDetailsByPlaceId`")
   Future<PlacesDetailsResponse> getDetailsByReference(
     String reference, {
     String? sessionToken,
